@@ -1,0 +1,4 @@
+# /data/*
+# !/data/settings.js
+# !/data/flows.json
+.vscode*
