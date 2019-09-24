@@ -1,4 +1,4 @@
-var settings = require('/app/.node-red/settings.js');
+var settings = require('/data/settings.js');
 var bcrypt = require('bcryptjs');
 const fs = require('fs');
 var util = require('util')
