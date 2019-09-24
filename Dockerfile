@@ -3,6 +3,6 @@ RUN npm install node-red-dashboard && npm install node-red-node-mongodb && npm i
 
 USER 0
 
-COPY ./data /data
+COPY setpassword.js /setpassword.js
 
 VOLUME /data
