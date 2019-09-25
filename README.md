@@ -1,6 +1,6 @@
 ##  Overview
 
-Minimal node-red implementation repo for dokku. 
+Simple node-red deployment for dokku. 
 
 ##  Usage
 
@@ -8,15 +8,23 @@ Minimal node-red implementation repo for dokku.
     ```
     dokku apps:create noder
     ```
-2. Add remote origin `dokku` - local
+2. Mount persistent volume
+   ```
+   dokku storage:mount noder /var/lib/dokku/data/storage/noder:/data
+   ```
+3. Add remote origin `dokku` - execute locally
     ```
     git remote add dokku dokku@alliot.xyz:noder
     ```
-3. Git push to to remote(dokku) -  local
+4. Git push to to remote(dokku) -  execute locally
     ```
     git push dokku master
     ```
-4. Change password  - on your dokku server
+5. Change password  - execute on your dokku server
    ``` 
    dokku enter noder web node ./setpasswd.js $user $pass
+   ``` 
+6. Restart dokku app
+   ```
+   dokku ps:restart noder
    ``` 
