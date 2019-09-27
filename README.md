@@ -22,7 +22,7 @@ Simple node-red deployment for dokku.
     ```
 5. Change password  - execute on your dokku server
    ``` 
-   dokku enter noder web node ./setpasswd.js $user $pass
+   dokku enter noder web node /setpassword.js $user $pass
    ``` 
 6. Restart dokku app
    ```
