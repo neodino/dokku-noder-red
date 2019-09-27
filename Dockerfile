@@ -8,5 +8,4 @@ COPY setpassword.js /setpassword.js
 
 VOLUME /data
 
-EXPOSE 1880/tcp
 EXPOSE 1883/tcp
