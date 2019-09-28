@@ -1,6 +1,6 @@
 FROM nodered/node-red-docker
 
-RUN npm install node-red-dashboard && npm install node-red-contrib-mqtt-broker && npm install brendan-myers/node-red-contrib-telstra-messaging 
+RUN npm install node-red-dashboard && npm install node-red-contrib-mqtt-broker && npm install neodino/node-red-contrib-telstra-messaging-api
 
 USER 0
 
