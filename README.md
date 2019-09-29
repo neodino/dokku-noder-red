@@ -24,7 +24,7 @@ Simple node-red deployment for dokku.
    ``` 
    dokku enter noder web node /setpassword.js $user $pass
    ``` 
-6. Restart dokku app
+6. Restart dokku app.
    ```
    dokku ps:restart noder
    ``` 
