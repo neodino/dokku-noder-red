@@ -1,6 +1,6 @@
 FROM nodered/node-red-docker
 
-RUN npm install neodino/node-red-contrib-telstra-messaging-api
+RUN npm install ttps://github.com/neodino/node-red-contrib-telstra-messaging-api.git
 
 USER 0
 
