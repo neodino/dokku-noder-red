@@ -1,4 +1,4 @@
-FROM nodered/node-red-docker
+FROM nodered/node-red:latest-10
 
 RUN npm i node-red-dashboard && npm i neodino/node-red-contrib-telstra-messaging-api  && npm i node-red-node-mongodb
 
